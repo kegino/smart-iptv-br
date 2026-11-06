@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /termos-de-uso
+Disallow: /politica-de-privacidade
+
+Sitemap: https://smartiptvbr.site/sitemap.xml
