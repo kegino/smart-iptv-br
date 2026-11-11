@@ -1,16 +1,18 @@
 # Multi-stage Dockerfile — TanStack Start (nitro node-server) para EasyPanel
-FROM oven/bun:1 AS deps
+FROM node:20-alpine AS base
 WORKDIR /app
-COPY package.json bun.lock* bun.lockb* bunfig.toml* ./
-RUN bun install --frozen-lockfile 2>/dev/null || bun install
+RUN npm install -g pnpm@10
 
-FROM oven/bun:1 AS builder
-WORKDIR /app
+FROM base AS deps
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+FROM base AS builder
 ENV NITRO_PRESET=node-server
 ENV NODE_ENV=production
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN bun run build
+RUN pnpm run build
 
 FROM node:20-alpine AS runner
 WORKDIR /app
