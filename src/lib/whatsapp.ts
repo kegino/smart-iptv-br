@@ -1,4 +1,4 @@
-export const WHATSAPP_PHONE = "5562982658713";
+export const WHATSAPP_PHONE = "5511933821957";
 
 export function whatsappUrl(keyword: string = "Smart IPTV BR"): string {
   const message = `Olá, Gostaria de falar sobre o ${keyword}`;

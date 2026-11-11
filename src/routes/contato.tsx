@@ -68,7 +68,7 @@ function ContatoPage() {
 
         <div className="mt-14 glass-card rounded-2xl p-10 text-center">
           <p className="text-sm text-slate-400">Atendimento humanizado · Aberto todos os dias</p>
-          <p className="mt-2 font-display text-2xl font-bold text-white">WhatsApp: +55 (62) 98265-8713</p>
+          <p className="mt-2 font-display text-2xl font-bold text-white">WhatsApp: +55 (11) 93382-1957</p>
         </div>
       </section>
     </div>

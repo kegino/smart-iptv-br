@@ -39,7 +39,7 @@ function PoliticaPage() {
           </section>
           <section>
             <h2 className="font-display text-2xl font-bold text-white">5. Atendimento de Privacidade</h2>
-            <p className="mt-2">Para qualquer esclarecimento sobre o tratamento de dados pessoais, entre em contato direto pelo WhatsApp oficial: +55 (62) 98265-8713.</p>
+            <p className="mt-2">Para qualquer esclarecimento sobre o tratamento de dados pessoais, entre em contato direto pelo WhatsApp oficial: +55 (11) 93382-1957.</p>
           </section>
         </div>
       </article>
